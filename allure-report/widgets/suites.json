@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"f0e5a3486f211a49cdd3cca277fba252","name":"example to-do app","statistic":{"failed":0,"broken":0,"skipped":0,"passed":3,"unknown":0,"total":3}},{"uid":"efba50048ee6d2f9aa582a7ae86aa52e","name":"example to-do app with a checked task","statistic":{"failed":0,"broken":0,"skipped":0,"passed":3,"unknown":0,"total":3}}]}

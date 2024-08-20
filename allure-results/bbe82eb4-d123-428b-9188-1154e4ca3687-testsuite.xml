@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1723204228695' stop='1723204229665'>
+    <name>example to-do app with a checked task</name>
+    <title>example to-do app with a checked task</title>
+    <test-cases>
+        <test-case start='1723204228698' status='passed' stop='1723204229032'>
+            <name>can filter for uncompleted tasks</name>
+            <title>can filter for uncompleted tasks</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1723204229041' status='passed' stop='1723204229325'>
+            <name>can filter for completed tasks</name>
+            <title>can filter for completed tasks</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1723204229335' status='passed' stop='1723204229665'>
+            <name>can delete all completed tasks</name>
+            <title>can delete all completed tasks</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

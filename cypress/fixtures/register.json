@@ -1,0 +1,11 @@
+{
+    "errorMessage":
+        {
+            "firstName": "First Name must be between 1 and 32 characters!",
+            "lastName": "Last Name must be between 1 and 32 characters!",
+            "email": "E-Mail Address does not appear to be valid!",
+            "telephone": "Telephone must be between 3 and 32 characters!",
+            "password": "Password must be between 4 and 20 characters!",
+            "confirmPassword": "Password confirmation does not match password!"
+        }
+}

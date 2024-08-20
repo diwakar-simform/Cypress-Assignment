@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","486","can add new todo items","","Fri Aug 09 17:20:27 IST 2024","passed","Fri Aug 09 17:20:28 IST 2024","","example to-do app","example to-do app","can add new todo items"
+"","2521","displays two todo items by default","","Fri Aug 09 17:20:25 IST 2024","passed","Fri Aug 09 17:20:27 IST 2024","","example to-do app","example to-do app","displays two todo items by default"
+"","334","can filter for uncompleted tasks","","Fri Aug 09 17:20:28 IST 2024","passed","Fri Aug 09 17:20:29 IST 2024","","example to-do app with a checked task","example to-do app with a checked task","can filter for uncompleted tasks"
+"","330","can delete all completed tasks","","Fri Aug 09 17:20:29 IST 2024","passed","Fri Aug 09 17:20:29 IST 2024","","example to-do app with a checked task","example to-do app with a checked task","can delete all completed tasks"
+"","284","can filter for completed tasks","","Fri Aug 09 17:20:29 IST 2024","passed","Fri Aug 09 17:20:29 IST 2024","","example to-do app with a checked task","example to-do app with a checked task","can filter for completed tasks"
+"","269","can check off an item as completed","","Fri Aug 09 17:20:28 IST 2024","passed","Fri Aug 09 17:20:28 IST 2024","","example to-do app","example to-do app","can check off an item as completed"
