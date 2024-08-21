@@ -31,6 +31,13 @@ class Login {
     validateInvalidLoginErrorMessage() {
         cy.get('#account-login > .alert').should('have.text', ' Warning: No match for E-Mail Address and/or Password.');
     }
+
+    makeLogin(userEmail, userPassword) {
+        this.goToLoginPage();
+        this.typeEmail(userEmail);
+        this.typePassword(userPassword);
+        this.clickSubmit();
+    }
 }
 
 export default Login;

@@ -1,5 +1,3 @@
-import Register from "../../register/register";
-
 class Purchase {
 
     selectProduct(productId) {

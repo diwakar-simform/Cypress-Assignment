@@ -1,7 +1,7 @@
-
+/// <reference types="cypress" />
 
 import Main from "../../../support/pom/main";
-import Login from "../../../support/pom/Login/Login";
+import Login from "../../../support/pom/Login/login";
 import Purchase from "../../../support/pom/Login/purchase/purchase";
 import Register from "../../../support/pom/register/register";
 
@@ -19,16 +19,13 @@ describe('Purchase a product', function() {
     const userPassword = "1234";
     
     beforeEach('Login & Buy Product', function() {
-        log.goToLoginPage();
-        log.typeEmail(userEmail);
-        log.typePassword(userPassword);
-        log.clickSubmit();
+        log.makeLogin(userEmail, userPassword);
         log.loggedInConfirmation();
         home.homePage();
         purchase.selectProduct(productId);
         purchase.addToCart();
         purchase.buyNow();
-        register.agree();
+        register.agreementCheckbox().check({force:true});
     })
 
     afterEach('Order Confirmation', function() {

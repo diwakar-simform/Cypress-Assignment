@@ -1,13 +1,26 @@
 name: Cypress Tests
-on:
-    pull_request:
-        branches:
-            -master
+
+on: 
+  pull_request:  # This triggers the workflow on pull requests
+    branches:
+      - master
+      - github-workflow
+
 jobs:
   cypress-run:
     runs-on: windows-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # Specify the version of Node.js your project uses
+
+      - name: Install dependencies
+        run: npm install  # Installs dependencies from package.json
+
       - name: Cypress run
         uses: cypress-io/github-action@v6

@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import Login from "../../pom/Login/Login"
+import Login from "../../support/pom/Login/login";
 
 describe('Validate: Login Positive Flow', function() {
 
@@ -11,10 +11,7 @@ describe('Validate: Login Positive Flow', function() {
 
     
     it('Validate: Successful Login with valid Credentials', function() {
-        log.goToLoginPage();
-        log.typeEmail(userEmail);
-        log.typePassword(userPassword);
-        log.clickSubmit();
+        log.makeLogin(userEmail, userPassword);
         log.loggedInConfirmation();
     })
 })
@@ -22,14 +19,11 @@ describe('Validate: Login Positive Flow', function() {
 describe('Validate: Negative Scenarios', function() {
 
     const log = new Login();
-    const userEmail = "123@1.com";
-    const userPassword = "1234"
+    const userEmail = "123@111.com";
+    const userPassword = "1234";
 
     it('Validate: Error Message for invalid credentials', function() {
-        log.goToLoginPage();
-        log.typeEmail(userEmail);
-        log.typePassword(userPassword);
-        log.clickSubmit();
+        log.makeLogin(userEmail, userPassword);
         log.validateInvalidLoginErrorMessage();
     })
 
