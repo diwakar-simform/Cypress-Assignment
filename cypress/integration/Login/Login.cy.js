@@ -19,8 +19,8 @@ describe('Validate: Login Positive Flow', function() {
 describe('Validate: Negative Scenarios', function() {
 
     const log = new Login();
-    const userEmail = "123@1.com";
-    const userPassword = "1234"
+    const userEmail = "123@111.com";
+    const userPassword = "1234";
 
     it('Validate: Error Message for invalid credentials', function() {
         log.makeLogin(userEmail, userPassword);
