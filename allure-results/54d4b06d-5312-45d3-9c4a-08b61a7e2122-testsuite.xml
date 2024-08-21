@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1724229496481' stop='1724229496848'>
+    <name>API Testing - Create New User</name>
+    <title>API Testing - Create New User</title>
+    <test-cases>
+        <test-case start='1724229496485' status='passed' stop='1724229496839'>
+            <name>Validate: It should create a new user and validate response structure and types</name>
+            <title>Validate: It should create a new user and validate response structure and types</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

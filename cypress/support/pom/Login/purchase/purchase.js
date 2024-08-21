@@ -4,6 +4,10 @@ class Purchase {
         cy.get(`#${productId}`).click();
     }
 
+    getProductName() {
+        return cy.get("h1.h3").invoke('text');
+    }
+
     addToCart() {
         cy.get('#entry_216842').click();
     }

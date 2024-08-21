@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1724229511042' stop='1724229536259'>
+    <name>User Registration Negative Scenario</name>
+    <title>User Registration Negative Scenario</title>
+    <test-cases>
+        <test-case start='1724229511042' status='passed' stop='1724229521960'>
+            <name>Validate: Error each field error messages</name>
+            <title>Validate: Error each field error messages</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1724229521982' status='passed' stop='1724229528020'>
+            <name>Validate: Alert message for the already registered email</name>
+            <title>Validate: Alert message for the already registered email</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1724229528046' status='passed' stop='1724229533145'>
+            <name>Validate: Error Message for entering mismatched values in password confirm field</name>
+            <title>Validate: Error Message for entering mismatched values in password confirm field</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1724229533158' status='passed' stop='1724229536259'>
+            <name>Validate: Status message for Telephone field</name>
+            <title>Validate: Status message for Telephone field</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
