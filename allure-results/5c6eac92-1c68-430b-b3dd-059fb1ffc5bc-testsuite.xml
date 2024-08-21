@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1724229507514' stop='1724229508997'>
+    <name>Validate: Negative Scenarios</name>
+    <title>Validate: Negative Scenarios</title>
+    <test-cases>
+        <test-case start='1724229507521' status='passed' stop='1724229508945'>
+            <name>Validate: Error Message for invalid credentials</name>
+            <title>Validate: Error Message for invalid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1724229508962' status='passed' stop='1724229508996'>
+            <name>There is no error message for user Email &amp; user Password</name>
+            <title>There is no error message for user Email &amp; user Password</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

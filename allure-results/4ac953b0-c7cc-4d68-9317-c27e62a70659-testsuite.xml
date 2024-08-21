@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1724229496210' stop='1724229496414'>
+    <name>API Testing - Get All Users</name>
+    <title>API Testing - Get All Users</title>
+    <test-cases>
+        <test-case start='1724229496210' status='passed' stop='1724229496402'>
+            <name>Validate: It should return a list of users with correct data types</name>
+            <title>Validate: It should return a list of users with correct data types</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

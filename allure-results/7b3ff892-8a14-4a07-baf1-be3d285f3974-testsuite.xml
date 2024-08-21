@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1724229496416' stop='1724229496480'>
+    <name>API Testing - Get Single User</name>
+    <title>API Testing - Get Single User</title>
+    <test-cases>
+        <test-case start='1724229496427' status='passed' stop='1724229496470'>
+            <name>Validate: It should return details of a single user with expected status code and headers</name>
+            <title>Validate: It should return details of a single user with expected status code and headers</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

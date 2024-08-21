@@ -17,6 +17,7 @@ describe('Purchase a product', function() {
     const productId = "mz-product-listing-image-37217944-0-4";
     const userEmail = "diwakar@simformsolutions.com";
     const userPassword = "1234";
+    var productName;
     
     beforeEach('Login & Buy Product', function() {
         log.makeLogin(userEmail, userPassword);
@@ -62,7 +63,36 @@ describe('Purchase a product', function() {
         purchase.selectRegion(regionName);
         purchase.checkout();
         purchase.placeOrder();
+    });
+})
+
+describe('Validate ordered products', function() {
+    const userEmail = "diwakar@simformsolutions.com";
+    const userPassword = "1234"; 
+    const productId = "mz-product-listing-image-37217944-0-4";
+
+    var productName;
+
+    const home = new Main();
+    const log = new Login();
+    const purchase = new Purchase();
+
+    beforeEach('Login & Buy Product', function() {
+        log.makeLogin(userEmail, userPassword);
+        log.loggedInConfirmation();
+        home.homePage();
+        purchase.selectProduct(productId);
+        purchase.getProductName().then((prodName) =>{
+            productName = prodName;
+        });
     })
 
-
+    it.only("Validate: The order details in the user's order history or account dashboard", function() {
+        log.goToLoginPage();
+        productName = productName+"\n";
+        cy.get('.row').contains(' View your order history').click();
+        cy.get('tbody > :nth-child(1) > :nth-child(7)').click(); //View the first product
+        // Validate: on the basis of product name.
+        cy.get('#content > .table-responsive > .table > tbody > tr > :nth-child(1)').should('have.text', productName);
+    });
 })
